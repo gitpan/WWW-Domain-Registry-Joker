@@ -1,0 +1,48 @@
+Revision history for Perl extension WWW::Domain::Registry::Joker,
+the Joker.com DMAPI interface module.
+
+0.04	2007/11/21
+	- WWW::Domain::Registry::Joker::Loggish
+	  - rename the err() method to error() to avoid clashes with
+	    my own convention of an err() getter/setter method in
+	    other classes
+	  - append the newline in the log() method, not in debug() or
+	    error()
+	  - fix the error() POD documentation syntax
+	- scripts/test.pl
+	  - add usage info, thereby eliminating the last FIXME item
+	    left in the code :)
+	- t/WWW-Domain-Registry-Joker-coverage.t
+	  - add a new test file running Test::Pod::Coverage tests
+	- t/WWW-Domain-Registry-Joker-podcheck.t
+	  - add a new test file running Pod::Checker tests
+
+0.03	2007/11/14
+	- fix the POD syntax of the Joker::Response class
+	- remove the hooks for fake response parsing, always use
+	  a real HTTP::Response object
+	- properly check if the response passed in is indeed an object
+	  before invoking OO methods on it
+	- properly parse multiline response headers - they appear as
+	  "duplicate" headers, so keep the old value, append the new one
+	- fully perl-document the Joker::Response class
+	- implement Joker->query_domain_list() properly
+	- remove the Joker->checkavailability() misintended stub
+	- remove the method prototypes in the Joker class, since they
+	  serve absolutely no purpose in OOP classes
+	- fully perl-document the WWW::Domain::Registry::Joker class
+	- bump module versions:
+	  WWW::Domain::Registry::Joker::Response 0.03
+
+0.02	2007/11/09
+	- remove a leftover copyright statement from Joker.pm.
+	- add some perldoc documentation
+	- Joker.pm checks if the lwp() parameter is a LWP::UserAgent
+	- bump module versions:
+	  WWW::Domain::Registry::Joker::Loggish 0.02
+	  WWW::Domain::Registry::Joker::Response 0.02
+
+0.01	2007/11/07
+	- Initial semi-public release.
+
+$CNsys: Changes 403 2007-11-21 15:06:27Z roam $
