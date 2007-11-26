@@ -1,6 +1,19 @@
 Revision history for Perl extension WWW::Domain::Registry::Joker,
 the Joker.com DMAPI interface module.
 
+0.05	2007/11/26
+	- WWW::Domain::Registry::Joker
+	  - change web hyperlinks to italics instead of POD links for
+	    compatibility with Perl 5.6.x.
+	- WWW::Domain::Registry::Joker::Response
+	  - change web hyperlinks to italics instead of POD links for
+	    compatibility with Perl 5.6.x.
+	- t/WWW-Domain-Registry-Joker-podcheck.t
+	  - fix the number of tests planned
+	  - skip the num_warnings() test on early versions of Pod::Checker
+	- bump module versions:
+	  WWW::Domain::Registry::Joker::Response 0.04
+
 0.04	2007/11/21
 	- WWW::Domain::Registry::Joker::Loggish
 	  - rename the err() method to error() to avoid clashes with
@@ -45,4 +58,4 @@ the Joker.com DMAPI interface module.
 0.01	2007/11/07
 	- Initial semi-public release.
 
-$CNsys: Changes 403 2007-11-21 15:06:27Z roam $
+$CNsys: Changes 411 2007-11-26 12:57:16Z roam $

@@ -1,4 +1,4 @@
-# $CNsys: WWW-Domain-Registry-Joker-coverage.t 403 2007-11-21 15:06:27Z roam $
+# $CNsys: WWW-Domain-Registry-Joker-coverage.t 411 2007-11-26 12:57:16Z roam $
 
 # Copyright (C) 2007 by Peter Pentchev
 #

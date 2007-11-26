@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# $CNsys: tests.pl 403 2007-11-21 15:06:27Z roam $
+# $CNsys: tests.pl 411 2007-11-26 12:57:16Z roam $
 
 # Copyright (C) 2007 by Peter Pentchev
 #

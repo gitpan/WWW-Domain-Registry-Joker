@@ -1,6 +1,6 @@
 use 5.006;
 
-# $CNsys: Makefile.PL 403 2007-11-21 15:06:27Z roam $
+# $CNsys: Makefile.PL 411 2007-11-26 12:57:16Z roam $
 
 # Copyright (C) 2007 by Peter Pentchev
 #

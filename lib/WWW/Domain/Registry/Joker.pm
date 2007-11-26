@@ -1,6 +1,6 @@
 package WWW::Domain::Registry::Joker;
 
-# $CNsys: Joker.pm 403 2007-11-21 15:06:27Z roam $
+# $CNsys: Joker.pm 411 2007-11-26 12:57:16Z roam $
 
 use 5.006;
 use strict;
@@ -15,7 +15,7 @@ use WWW::Domain::Registry::Joker::Response;
 
 our @ISA = qw(WWW::Domain::Registry::Joker::Loggish);
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 =head1 NAME
 
@@ -83,7 +83,7 @@ The diagnostic output level, 0 for no diagnostic messages.
 =item * dmapi_url
 
 The URL to use for Joker.com Domain Management API (DMAPI) requests;
-if not specified, the standard URL L<https://dmapi.joker.com/request>
+if not specified, the standard URL I<https://dmapi.joker.com/request>
 is used.
 
 =back
@@ -361,7 +361,7 @@ a suitable error message placed in $@.
 
 =head1 SEE ALSO
 
-L<https://joker.com/faq/category/39/22-dmapi.html> - the Joker.com DMAPI
+I<https://joker.com/faq/category/39/22-dmapi.html> - the Joker.com DMAPI
 documentation
 
 =head1 BUGS

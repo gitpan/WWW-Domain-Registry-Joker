@@ -1,4 +1,4 @@
-# $CNsys: WWW-Domain-Registry-Joker-podcheck.t 403 2007-11-21 15:06:27Z roam $
+# $CNsys: WWW-Domain-Registry-Joker-podcheck.t 411 2007-11-26 12:57:16Z roam $
 
 # Copyright (C) 2007 by Peter Pentchev
 #
@@ -14,7 +14,7 @@
 
 use Pod::Checker;
 use Test;
-plan tests => 18;
+plan tests => 24;
 
 my $file;
 
@@ -32,7 +32,12 @@ foreach $file (qw(Joker.pm Joker/Loggish.pm Joker/Response.pm)) {
 	        warn "No POD data found in WWW::Domain::Registry::$mod\n";
 	}
 	ok(!$res);
-	ok($c->num_errors() == 0 && $c->num_warnings() == 0);
+	ok($c->num_errors() == 0);
+	if ($c->can('num_warnings')) {
+		ok($c->num_warnings() == 0);
+	} else {
+		skip('Pod::Checker does not support num_warnings', 1);
+	}
 	
 	$c = new Pod::Checker '-warnings' => 5;
 	ok($c);
@@ -41,5 +46,10 @@ foreach $file (qw(Joker.pm Joker/Loggish.pm Joker/Response.pm)) {
 	        warn "No POD data found in WWW::Domain::Registry::$mod\n";
 	}
 	ok(!$res);
-	ok($c->num_errors() == 0 && $c->num_warnings() == 0);
+	ok($c->num_errors() == 0);
+	if ($c->can('num_warnings')) {
+		ok($c->num_warnings() == 0);
+	} else {
+		skip('Pod::Checker does not support num_warnings', 1);
+	}
 }

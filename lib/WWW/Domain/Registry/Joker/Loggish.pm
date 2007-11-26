@@ -1,6 +1,6 @@
 package WWW::Domain::Registry::Joker::Loggish;
 
-# $CNsys: Loggish.pm 403 2007-11-21 15:06:27Z roam $
+# $CNsys: Loggish.pm 411 2007-11-26 12:57:16Z roam $
 
 use 5.006;
 use strict;

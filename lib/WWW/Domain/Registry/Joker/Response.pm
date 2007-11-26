@@ -1,6 +1,6 @@
 package WWW::Domain::Registry::Joker::Response;
 
-# $CNsys: Response.pm 403 2007-11-21 15:06:27Z roam $
+# $CNsys: Response.pm 411 2007-11-26 12:57:16Z roam $
 
 use 5.006;
 use strict;
@@ -10,7 +10,7 @@ use WWW::Domain::Registry::Joker::Loggish;
 
 our @ISA = qw(WWW::Domain::Registry::Joker::Loggish);
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 NAME
 
@@ -176,7 +176,7 @@ the C<WWW::Domain::Registry::Joker::Response> object as shown above.
 
 L<WWW::Domain::Registry::Joker>, L<HTTP::Response>
 
-L<https://joker.com/faq/category/39/22-dmapi.html> - the Joker.com DMAPI
+I<https://joker.com/faq/category/39/22-dmapi.html> - the Joker.com DMAPI
 documentation
 
 =head1 BUGS
