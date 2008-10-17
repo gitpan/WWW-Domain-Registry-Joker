@@ -1,6 +1,14 @@
 Revision history for Perl extension WWW::Domain::Registry::Joker,
 the Joker.com DMAPI interface module.
 
+0.07	2008/10/17
+	- add the META.yml file to the packing manifest
+
+0.06	2008/10/17
+	- add a META.yml file
+	- Makefile.PL
+	  - specify the Perl license for newer MakeMaker versions
+
 0.05	2007/11/26
 	- WWW::Domain::Registry::Joker
 	  - change web hyperlinks to italics instead of POD links for
@@ -58,4 +66,4 @@ the Joker.com DMAPI interface module.
 0.01	2007/11/07
 	- Initial semi-public release.
 
-$CNsys: Changes 411 2007-11-26 12:57:16Z roam $
+$CNsys: Changes 2378 2008-10-17 10:28:18Z roam $

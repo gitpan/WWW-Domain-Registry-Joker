@@ -1,6 +1,6 @@
 package WWW::Domain::Registry::Joker::Response;
 
-# $CNsys: Response.pm 411 2007-11-26 12:57:16Z roam $
+# $CNsys: lib/WWW/Domain/Registry/Joker/Response.pm 2375 2008-10-17 10:25:08Z roam $
 
 use 5.006;
 use strict;

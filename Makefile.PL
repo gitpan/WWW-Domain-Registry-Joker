@@ -1,6 +1,6 @@
 use 5.006;
 
-# $CNsys: Makefile.PL 411 2007-11-26 12:57:16Z roam $
+# $CNsys: Makefile.PL 2375 2008-10-17 10:25:08Z roam $
 
 # Copyright (C) 2007 by Peter Pentchev
 #
@@ -22,4 +22,5 @@ WriteMakefile(
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/WWW/Domain/Registry/Joker.pm',
        AUTHOR         => 'Peter Pentchev <roam@ringlet.net>') : ()),
+    ($ExtUtils::MakeMaker::VERSION >= 6.3002 ? (LICENSE => "perl") : ()),
 );

@@ -1,6 +1,7 @@
 Changes
 MANIFEST
 Makefile.PL
+META.yml
 README
 lib/WWW/Domain/Registry/Joker.pm
 lib/WWW/Domain/Registry/Joker/Loggish.pm
@@ -9,4 +10,3 @@ scripts/tests.pl
 t/WWW-Domain-Registry-Joker.t
 t/WWW-Domain-Registry-Joker-coverage.t
 t/WWW-Domain-Registry-Joker-podcheck.t
-META.yml                                 Module meta-data (added by MakeMaker)

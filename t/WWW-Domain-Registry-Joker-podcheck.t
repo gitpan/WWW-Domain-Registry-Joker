@@ -1,4 +1,4 @@
-# $CNsys: WWW-Domain-Registry-Joker-podcheck.t 411 2007-11-26 12:57:16Z roam $
+# $CNsys: t/WWW-Domain-Registry-Joker-podcheck.t 2375 2008-10-17 10:25:08Z roam $
 
 # Copyright (C) 2007 by Peter Pentchev
 #
