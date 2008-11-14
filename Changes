@@ -1,6 +1,14 @@
 Revision history for Perl extension WWW::Domain::Registry::Joker,
 the Joker.com DMAPI interface module.
 
+0.08	2008/11/14
+	- belatedly bump the copyright year on README, Makefile.PL,
+	  and Joker.pm
+	- WWW::Domain::Registry::Joker
+	  - send "!@!" instead of an empty string, since the DMAPI
+	    treats an empty string as "no change requested".
+	    Hoster ticket #750
+
 0.07	2008/10/17
 	- add the META.yml file to the packing manifest
 
@@ -66,4 +74,4 @@ the Joker.com DMAPI interface module.
 0.01	2007/11/07
 	- Initial semi-public release.
 
-$CNsys: Changes 2378 2008-10-17 10:28:18Z roam $
+$CNsys: Changes 2521 2008-11-14 10:36:14Z roam $

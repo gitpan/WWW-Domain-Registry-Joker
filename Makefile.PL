@@ -1,8 +1,8 @@
 use 5.006;
 
-# $CNsys: Makefile.PL 2375 2008-10-17 10:25:08Z roam $
+# $CNsys: Makefile.PL 2499 2008-11-12 09:40:01Z roam $
 
-# Copyright (C) 2007 by Peter Pentchev
+# Copyright (C) 2007, 2008 by Peter Pentchev
 #
 # This library is free software; you can redistribute it and/or modify
 # it under the same terms as Perl itself, either Perl version 5.8.8 or,

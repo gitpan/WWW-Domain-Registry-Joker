@@ -1,6 +1,6 @@
 package WWW::Domain::Registry::Joker;
 
-# $CNsys: lib/WWW/Domain/Registry/Joker.pm 2376 2008-10-17 10:27:22Z roam $
+# $CNsys: lib/WWW/Domain/Registry/Joker.pm 2500 2008-11-12 10:17:07Z roam $
 
 use 5.006;
 use strict;
@@ -15,7 +15,7 @@ use WWW::Domain::Registry::Joker::Response;
 
 our @ISA = qw(WWW::Domain::Registry::Joker::Loggish);
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 =head1 NAME
 
@@ -250,6 +250,10 @@ parameters in the C<PARAMS> hash.  The request name string and
 the parameters (required and optional) are as specified by
 the DMAPI documentation
 
+Note that if a parameter is supplied with the empty string as a value,
+the C<do_request()> method will send the I<"!@!"> string instead,
+since the DMAPI considers empty values to mean no change requested.
+
 Invokes the C<login()> method if necessary.
 
 =cut
@@ -258,13 +262,21 @@ sub do_request($ $ %)
 {
 	my ($self, $type, %data) = @_;
 	my ($req, $hresp, $resp);
+	my (%d);
 
 	if (!defined($self->{'authsid'})) {
 		return undef unless $self->login();
 	}
+	foreach (keys %data) {
+		if (defined($data{$_}) && length($data{$_})) {
+			$d{$_} = $data{$_};
+		} else {
+			$d{$_} = '!@!';
+		}
+	}
 	$req = $self->build_request("$type",
 	    'Auth-Sid' => $self->{'authsid'},
-	    %data);
+	    %d);
 	$self->debug("=== DMAPI $type request\n".$req->as_string()."\n===\n");
 	$hresp = $self->lwp()->request($req);
 	$resp = new WWW::Domain::Registry::Joker::Response(
@@ -398,7 +410,7 @@ Peter Pentchev, E<lt>roam@ringlet.netE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2007 by Peter Pentchev
+Copyright (C) 2007, 2008 by Peter Pentchev
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.8 or,
