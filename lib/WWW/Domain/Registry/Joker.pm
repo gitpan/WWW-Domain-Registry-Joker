@@ -1,6 +1,6 @@
 package WWW::Domain::Registry::Joker;
 
-# $CNsys: lib/WWW/Domain/Registry/Joker.pm 2500 2008-11-12 10:17:07Z roam $
+# $CNsys: lib/WWW/Domain/Registry/Joker.pm 2525 2008-11-14 11:20:58Z roam $
 
 use 5.006;
 use strict;
@@ -15,7 +15,7 @@ use WWW::Domain::Registry::Joker::Response;
 
 our @ISA = qw(WWW::Domain::Registry::Joker::Loggish);
 
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 =head1 NAME
 

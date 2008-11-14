@@ -1,6 +1,6 @@
 use 5.006;
 
-# $CNsys: Makefile.PL 2499 2008-11-12 09:40:01Z roam $
+# $CNsys: Makefile.PL 2526 2008-11-14 11:22:46Z roam $
 
 # Copyright (C) 2007, 2008 by Peter Pentchev
 #
@@ -19,6 +19,7 @@ WriteMakefile(
 	'LWP'		=> 5,
 	'Test::More'	=> 0,
        	},
+    NO_META           => 1,
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/WWW/Domain/Registry/Joker.pm',
        AUTHOR         => 'Peter Pentchev <roam@ringlet.net>') : ()),

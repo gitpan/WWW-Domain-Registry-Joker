@@ -1,4 +1,4 @@
-WWW-Domain-Registry-Joker version 0.08
+WWW-Domain-Registry-Joker version 0.09
 =========================================
 
 The WWW-Domain-Registry-Joker module provides a Perl interface to
@@ -37,4 +37,4 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.8 or,
 at your option, any later version of Perl 5 you may have available.
 
-$CNsys: README 2499 2008-11-12 09:40:01Z roam $
+$CNsys: README 2525 2008-11-14 11:20:58Z roam $
