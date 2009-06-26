@@ -1,6 +1,15 @@
 Revision history for Perl extension WWW::Domain::Registry::Joker,
 the Joker.com DMAPI interface module.
 
+0.10	2009/06/26
+	- README
+	  - update the copyright years
+	- WWW::Domain::Registry::Joker
+	  - only send "!@!" for object modification requests; no need
+	    to register contacts and domains with "!@!" in the empty
+	    address parts
+	  - update the copyright years
+
 0.09	2008/11/14
 	- Makefile.PL
 	  - do not regenerate the META.yml each time, thus actually
@@ -79,4 +88,4 @@ the Joker.com DMAPI interface module.
 0.01	2007/11/07
 	- Initial semi-public release.
 
-$CNsys: Changes 2527 2008-11-14 11:24:11Z roam $
+$CNsys: Changes 3202 2009-06-26 09:00:31Z roam $
